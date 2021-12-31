@@ -89,6 +89,28 @@ Para resolver esse tipo de problema, os sistemas de mensageria pode vir ser uma 
 - Binding Keys
 - Exchange
 
+
+## Exchange
+É o elemeto que separa a mensagem em filas seguindo critérios, faz a correspondencia e o roteamento,  seja o o critério distribuir em todas as filas, 
+ou um critério mais específico onde apenas umas o outra fila recebe a mensagem.
+- Fanout
+
+  Broadcast, Não há restrição ou critério de decisão para escolha das filas, todas as mensagens que chegam, vão para todas as filas.
+- Direct
+
+  Comparação realizada entre a routing key e binding key, a combinação precisa ser **exata**.
+- Topic
+  
+  Comparação realizada entre a routing key e binding key, a combinação é **parcial**.
+   - \*   Substituição por uma única palavra;
+   - \#   Substituição por zero ou mais palavras;
+   - `veloz.branco.carro` => `*.*.coelho` ou  `veloz.#`
+- Head
+
+  Utiliza o cbaeçalho da mensagem como fator de decisão;
+- Default
+  
+  Comparativo padrão: Routing key e o nome da fila;
 ## Quando?
 
 - Meu cliente precisa de respostas Imediatas?
