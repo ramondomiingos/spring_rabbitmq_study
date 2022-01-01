@@ -18,6 +18,11 @@ mais de um consumidor pra fila.E diferentes configurações de ack.
 - Topic
 
   Criação de Topic, com route/bind key usando # e * para fazer o match .
+- PubConfirmation
+
+  Faz o envio de novas mensagens e espera a confirmação da Exchange do recebimento.Essa confirmação pode ser uma a uma, ou após o envio de um certo número de mensagens, isso depende da implementação.
+
+
 # Teoria
 ## Mensageria
 
