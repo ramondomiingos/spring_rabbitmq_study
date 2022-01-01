@@ -11,6 +11,10 @@ mais de um consumidor pra fila.E diferentes configurações de ack.
   
   Criação de uma Exchange, com 2 filas, uma temporaria, criado com nome aleatório e uma permanente, com nome escolhido pelo desenvolvedor.
 
+- Routing
+
+  Criação de uma exchange e 2 bindig key, para 2 receiver diferentes.
+
 
 # Teoria
 ## Mensageria
@@ -117,7 +121,7 @@ ou um critério mais específico onde apenas umas o outra fila recebe a mensagem
   Comparação realizada entre a routing key e binding key, a combinação é **parcial**.
    - \*   Substituição por uma única palavra;
    - \#   Substituição por zero ou mais palavras;
-   - `veloz.branco.carro` => `*.*.coelho` ou  `veloz.#`
+   - `veloz.branco.carro` => `*.*.carro` ou  `veloz.#`
 - Head
 
   Utiliza o cbaeçalho da mensagem como fator de decisão;
