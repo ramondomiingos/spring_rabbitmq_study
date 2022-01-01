@@ -1,3 +1,16 @@
+# Organização do projeto
+O projeto esta organizado em pacotes, com possíveis formas de uso do RabbitMQ
+- Sender/Receive
+  
+  Configura o envio direto, sem o uso de Exchange ou filas personalizadas.
+- WorkQueue
+  
+  Configura o uso de filas nomeadas, 2 consumidores, simulando o roud-robin, o comportamento padrão do Rabbitmq quando existe 
+mais de um consumidor pra fila.E diferentes configurações de ack.
+- PubSub
+  
+  Criação de uma Exchange, com 2 filas, uma temporaria, criado com nome aleatório e uma permanente, com nome escolhido pelo desenvolvedor.
+
 
 # Teoria
 ## Mensageria
