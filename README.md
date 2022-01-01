@@ -21,7 +21,9 @@ mais de um consumidor pra fila.E diferentes configurações de ack.
 - PubConfirmation
 
   Faz o envio de novas mensagens e espera a confirmação da Exchange do recebimento.Essa confirmação pode ser uma a uma, ou após o envio de um certo número de mensagens, isso depende da implementação.
+- DLX
 
+  Foi criado uma configuração para DLX - Dead Letter eXchange, onde após um ttl de 10000 mils, a mensagem iria para exchange DLX e suas filas.Para verificar isso funcionando é necessario desligar o receiver, se a mensagem for lida, ela será removida da fila , como uma mensagem processada corretamente.
 
 # Teoria
 ## Mensageria
