@@ -15,7 +15,9 @@ mais de um consumidor pra fila.E diferentes configurações de ack.
 
   Criação de uma exchange e 2 bindig key, para 2 receiver diferentes.
 
+- Topic
 
+  Criação de Topic, com route/bind key usando # e * para fazer o match .
 # Teoria
 ## Mensageria
 
