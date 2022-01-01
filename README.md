@@ -1,3 +1,7 @@
+🇧🇷 Projeto feito com o objetivo de usar diferentes tipos de configurações que o RabbitMQ pode oferecer, e entender o seu funcionamento.
+
+🇺🇸 Project made with the objective to use different types of configurations that RabbitMQ can offer, and to understand how it works.
+
 # Organização do projeto
 O projeto esta organizado em pacotes, com possíveis formas de uso do RabbitMQ
 - Sender/Receive
